@@ -1,5 +1,7 @@
-FROM moul/sshd
-MAINTAINER Manfred Touron "m@42.am"
+FROM ubuntu
+MAINTAINER Jerome Baum "jerome@jeromebaum.com"
+
+RUN echo "root:root" | chpasswd
 
 ENV VERSION 2.14
 ENV TARBALL shellinabox-$VERSION.tar.gz
